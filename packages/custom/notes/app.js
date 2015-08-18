@@ -16,6 +16,9 @@ Notes.register(function(app, auth, database) {
   //We enable routing. By default the Package Object is passed to the routes
   Notes.routes(app, auth, database);
 
+  Notes.aggregateAsset('css', 'notes.css');
+  Notes.aggregateAsset('img', 'favicon.ico');
+
   //We are adding a link to the main menu for all authenticated users
   Notes.menus.add({
     title: 'Notes',
@@ -24,7 +27,7 @@ Notes.register(function(app, auth, database) {
     menu: 'main'
   });
   
-  Notes.aggregateAsset('css', 'notes.css');
+
 
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above

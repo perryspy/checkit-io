@@ -27,6 +27,9 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
         $scope.descendants = [];
     };
 
+
+    // ARTICLE OPERATIONS
+
     $scope.create = function(isValid) {
       if (isValid) {
         // $scope.article.permissions.push('test test');
